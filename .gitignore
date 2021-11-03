@@ -1,2 +1,3 @@
 config.py
 venv-cd
+__pycache__
