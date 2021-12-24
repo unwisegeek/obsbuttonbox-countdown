@@ -12,16 +12,6 @@ from config import (
 
 COUNTDOWN_FILE=f"{expanduser('~')}/countdown"
 
-# try:
-#     time = int(sys.argv[1])
-# except:
-#     print("You must provide a time in seconds as an integer to countdown from.")
-
-# end_time = init_time + datetime.timedelta(seconds=time)
-
-# current_time = datetime.now()
-# while current_time.timestamp() < end_time.timestamp():
-
 def on_connect(client, userdata, flags, rc):
     print(f"Connected to mosquitto with result code {rc}")
     client.subscribe("countdown")
